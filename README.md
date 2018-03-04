@@ -11,7 +11,7 @@ Problems:
 2) If your container is 1500px wide and your image is 600px, the 600px image will be stretched. Even though the original image is only 600px wide, your can crop this image to a 1500px wide segment. 
 
 These are the problems that prompted me to make some additions to the source code. 
-# How to use the changes
+# How to implement the changes
 
 ## Step 1) Referencing the new package
 To use this package instead of the original you must edit your project's package.json to reference this repo like this:  
