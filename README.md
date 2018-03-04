@@ -1,7 +1,5 @@
 ## React Image Cropper Dynamic
 
-[![Downloads](https://img.shields.io/npm/dt/react-image-cropper.svg)](https://www.npmjs.com/package/react-image-cropper)
-[![Version](https://img.shields.io/npm/v/react-image-cropper.svg)](https://www.npmjs.com/package/react-image-cropper)
 
 ## Changes
 The purpose of this repo is to give more control to image sizing. There is a bug that exists in the current source code which will force any image to be sized to the dimensions of the parent container. 
