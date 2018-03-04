@@ -7,8 +7,8 @@
 The purpose of this repo is to give more control to image sizing. There is a bug that exists in the current source code which will force any image to be sized to the dimensions of the parent container. 
 
 Problems: 
-1) This means that if your parent container is 600px wide and you upload a 1500px image, the 1500px image will be stretched. 
-2) Equally if your container is 1500px wide and your image is 600px, the 600px image will be stretched. 
+1) If your parent container is 600px wide and you upload a 1500px image, the 1500px image will be stretched. 
+2) If your container is 1500px wide and your image is 600px, the 600px image will be stretched. 
 
 The problem with this approach is that in case 2, even though the original image is only 600px wide, your can crop this image to a 1500px wide segment. This causes problems for the end user, and this is the problem that prompted me to make some additions to the source code. 
 
