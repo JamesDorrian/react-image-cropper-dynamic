@@ -11,12 +11,12 @@ Problems:
 2) If your container is 1500px wide and your image is 600px, the 600px image will be stretched. Even though the original image is only 600px wide, your can crop this image to a 1500px wide segment. 
 
 These are the problems that prompted me to make some additions to the source code. 
+# How to use the changes
+
 ## Step 1) Referencing the new package
 To use this package instead of the original you must edit your project's package.json to reference this repo like this:  
 
-"react-image-cropper": "git+https://github.com/jamesdorrian/react-image-cropper-dynamic.git", 
-
-## How to use the changes
+"react-image-cropper": "git+https://github.com/jamesdorrian/react-image-cropper-dynamic.git"
 
 ## Step 2) Finding the image Width
 The react image documentation [available here](https://facebook.github.io/react-native/docs/image.html) has a method called .getSize() which is an asynchronous call returning the width and height of an image. However, This method can fail if the image cannot be found, or fails to download and as such should not be relied upon too heavily. 
