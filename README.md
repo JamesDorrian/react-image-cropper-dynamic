@@ -19,10 +19,12 @@ To use this package instead of the original you must edit your project's package
 ## Step 2) Finding the image Width
 The react image documentation [available here](https://facebook.github.io/react-native/docs/image.html) has a method called .getSize() which is an asynchronous call returning the width and height of an image. However, This method can fail if the image cannot be found, or fails to download and as such should not be relied upon too heavily. 
 
-A more robust (but somewhat hacky) change that can be used is to use the image src to render a background image with z-index -10 and position:absolute; Use the onLoad={() => this.executeFunctionName()} method to access the width and height of the image when loaded. Only when the image is loaded should you allow the cropper to render (using conditional react rendering techniques [found here](https://reactjs.org/docs/conditional-rendering.html). 
+A more robust (but somewhat hacky) change that can be used is to use the image src to render a background image with z-index -10 and position:absolute; Use the ```<Img ref='hiddenImage' className='hideMe' onLoad={() => this.executeFunctionName()}>``` method to access the width and height of the image when loaded. This can be done easily using refs to access the Image object's information. 
+
+Only when the image is loaded should you allow the cropper to render (using conditional react rendering techniques [found here](https://reactjs.org/docs/conditional-rendering.html). 
 
 ## Step 3) Loading the image width prop into the component
-Once these dimensions are attained and the cropper is ready to be loaded, you must enter the new width as a prop to the <Cropper newItem={WIDTH HERE AS INTEGER} />
+Once these dimensions are attained and the cropper is ready to be loaded, you must enter the new width as a prop to the ```<Cropper newItem={WIDTH HERE AS INTEGER} />```
 
 
 **[See the original package](https://www.npmjs.com/package/react-image-cropper)**
