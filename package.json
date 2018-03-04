@@ -1,0 +1,145 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-image-cropper",
+        "scope": null,
+        "escapedName": "react-image-cropper",
+        "name": "react-image-cropper",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jamesdorrian/Documents/React-JS-All/placemate"
+    ]
+  ],
+  "_from": "react-image-cropper@latest",
+  "_id": "react-image-cropper@1.3.0",
+  "_inCache": true,
+  "_location": "/react-image-cropper",
+  "_nodeVersion": "8.1.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-image-cropper-1.3.0.tgz_1517325463849_0.4601825422141701"
+  },
+  "_npmUser": {
+    "name": "jerryshew",
+    "email": "jerryshew@gmail.com"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {
+    "fbjs": "0.8.16",
+    "loose-envify": "1.3.1",
+    "object-assign": "4.1.1",
+    "prop-types": "15.6.0"
+  },
+  "_requested": {
+    "raw": "react-image-cropper",
+    "scope": null,
+    "escapedName": "react-image-cropper",
+    "name": "react-image-cropper",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-image-cropper/-/react-image-cropper-1.3.0.tgz",
+  "_shasum": "61a20c1ebab21a878d0845f56ee0b13f8217b16b",
+  "_shrinkwrap": null,
+  "_spec": "react-image-cropper",
+  "_where": "/Users/jamesdorrian/Documents/React-JS-All/placemate",
+  "author": {
+    "name": "jerryshew"
+  },
+  "bugs": {
+    "url": "https://github.com/jerryshew/react-image-cropper/issues"
+  },
+  "dependencies": {
+    "deep-extend": "^0.4.1",
+    "npm-run-all": "^4.1.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "description": "react image crop",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-react-transform": "^1.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-runtime": "^6.0.0",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.8.5",
+    "force-case-sensitivity-webpack-plugin": "^0.1.1",
+    "html-webpack-plugin": "^1.6.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "postcss-loader": "^2.0.6",
+    "pre-commit": "^1.2.2",
+    "progress-bar-webpack-plugin": "^1.9.3",
+    "react-transform-hmr": "^1.0.0",
+    "style-loader": "^0.12.3",
+    "uglify-loader": "^1.2.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.5.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-OPEMv66xXQdNsAixqxhlsSX3+D3KVRQMYc6YHmgGINeKx433xB9l04hMFynngPuUa+ChiKal6aQmbzpg79iJ+Q==",
+    "shasum": "61a20c1ebab21a878d0845f56ee0b13f8217b16b",
+    "tarball": "https://registry.npmjs.org/react-image-cropper/-/react-image-cropper-1.3.0.tgz"
+  },
+  "gitHead": "3a2a2d49cade2ee4e36c734ebaeb9b676aa0b151",
+  "homepage": "https://github.com",
+  "keywords": [
+    "react",
+    "image crop",
+    "front crop",
+    "canvas",
+    "react component"
+  ],
+  "license": "MIT",
+  "main": "app.js",
+  "maintainers": [
+    {
+      "name": "jerryshew",
+      "email": "jerryshew@gmail.com"
+    }
+  ],
+  "name": "react-image-cropper",
+  "optionalDependencies": {},
+  "pre-commit": [
+    "lint"
+  ],
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerryshew/react-image-cropper.git"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015,react --watch component/ --out-dir lib/",
+    "build": "webpack -p",
+    "lint": "eslint ./component",
+    "server": "cross-env NODE_ENV=dev node server.js",
+    "start": "npm-run-all --parallel babel server"
+  },
+  "version": "1.3.0"
+}
